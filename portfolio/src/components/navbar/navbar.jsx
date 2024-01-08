@@ -54,6 +54,10 @@ export const Navbar = ({ hero }) => {
       return !prevstate;
     });
   };
+  const handledownload = () => {
+    const resumeurl = process.env.PUBLIC_URL + "/Om rajgure resume.pdf";
+    window.open(resumeurl, "_blank");
+  };
 
   return (
     <div>
@@ -143,6 +147,13 @@ export const Navbar = ({ hero }) => {
             Contact me
           </Button>
         </Link>
+        <Button
+          onClick={handledownload}
+          sx={{ width: "8rem", backgroundColor: "var(--color-primary)" }}
+          variant="outlined"
+        >
+          Resume/CV
+        </Button>
       </div>
     </div>
   );
