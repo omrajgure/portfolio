@@ -36,6 +36,12 @@
     width: 150rem;
   }
 }
+@media screen and (max-width: 1050px) {
+  .img_div {
+    width: 85rem;
+    height: 30rem;
+  }
+}
 @media screen and (max-width: 840px) {
   .inner_wrapper {
     flex-direction: column-reverse;
@@ -44,12 +50,13 @@
     margin-top: 2rem;
   }
   .img_div {
-    height: 25rem;
-    width: 35rem;
+    height: 40rem;
+    width: 30rem;
   }
 }
 @media screen and (max-width: 570px) {
   .img_div {
     width: auto;
+    height: auto;
   }
 }

@@ -58,7 +58,7 @@
 .img_div {
   margin-top: 5.2rem;
   height: 30rem;
-  width: 30rem;
+  width: 28rem;
 }
 .intro {
   width: auto;
@@ -94,6 +94,7 @@
     opacity: 0.5;
   }
   .img_div {
+    width: 23rem;
     margin: 0;
   }
 }
@@ -130,8 +131,8 @@
     display: none;
   }
   .img_div {
-    width: 15rem;
-    height: 25rem;
+    width: 16rem;
+    height: 22rem;
   }
   .arrow {
     top: 2%;

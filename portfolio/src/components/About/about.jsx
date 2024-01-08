@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./about.module.css";
-import about_img from "../../assets/about_me_img.svg";
+import about_img from "../../assets/about_me_img.png";
 export const About = () => {
   return (
     <div className={styles.wrapper} id="about">
