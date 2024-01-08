@@ -1,0 +1,75 @@
+.wrapper {
+  display: grid;
+  min-block-size: 100vh;
+  place-content: center;
+  margin-top: 0;
+  overflow: hidden;
+}
+.heading {
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+.tagList {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+.tagList li {
+  font-weight: bold;
+  width: 15rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #f8f8f8;
+  box-shadow: 0 0.5rem 1rem -0.25rem #c0c0c0;
+}
+.skillsContainer {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.scroller {
+  overflow: hidden;
+  max-width: 1100px;
+
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.scroller_inner {
+  animation: scroll 40s linear infinite;
+  width: fit-content;
+  padding-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .tagList li {
+    width: 10rem;
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tagList li {
+    width: 7rem;
+    height: 7rem;
+  }
+}

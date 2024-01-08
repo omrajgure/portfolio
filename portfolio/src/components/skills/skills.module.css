@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+}
+.spiral {
+  position: absolute;
+  top: 1rem;
+  left: 8rem;
+  height: 6rem;
+  width: 6rem;
+}
+.stars {
+  position: absolute;
+  bottom: 0;
+  left: 12rem;
+  height: 5rem;
+  width: 7rem;
+}
+.paws {
+  position: absolute;
+  top: 1rem;
+  right: 8rem;
+  height: 6rem;
+  width: 6rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .stars {
+    bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .paws {
+    right: 5rem;
+  }
+  .spiral {
+    left: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .paws {
+    right: 0;
+  }
+  .spiral {
+    left: 0;
+  }
+  .stars {
+    bottom: 6rem;
+    left: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stars {
+    bottom: 8rem;
+    left: 3rem;
+  }
+}

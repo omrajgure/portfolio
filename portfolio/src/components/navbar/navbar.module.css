@@ -1,0 +1,90 @@
+.wrapper {
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 4rem;
+  width: 100%;
+
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  z-index: 5000;
+}
+.navbar_ele {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  /* color: var(--color-white); */
+}
+.brandname {
+  display: flex;
+  color: var(--color-primary);
+}
+.hamburger {
+  display: none;
+}
+.hiddenDiv {
+  height: 15rem;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar_ele {
+  position: relative;
+}
+.navbar_ele li {
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  z-index: 1;
+}
+.navbar_ele span {
+  position: absolute;
+  top: -6px;
+  left: -22px;
+  height: 40px;
+  width: 90px;
+  background: linear-gradient(to left, #61045f, #aa076b 100%);
+  /* background-color: var(--color-primary); */
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+/* .stickyNavbar {
+  position: fixed;
+  top: 0;
+} */
+/* .navbar_ele li:nth-child(2):hover ~ span {
+  left: 50px;
+}
+.navbar_ele li:nth-child(3):hover ~ span {
+  left: 135px;
+}
+.navbar_ele li:nth-child(4):hover ~ span {
+  left: 235px;
+} */
+@media screen and (max-width: 668px) {
+  .navbar_ele {
+    display: none;
+  }
+
+  .brandname {
+    justify-content: flex-start;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

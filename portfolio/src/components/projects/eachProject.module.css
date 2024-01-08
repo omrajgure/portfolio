@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  min-width: 25rem;
+  min-height: 38rem;
+  height: auto;
+  width: auto;
+  color: black;
+  background: #f8f8f8;
+  box-shadow: 0 0.5rem 1rem -0.25rem #c0c0c0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-radius: 12px;
+}
+.card:hover {
+  scale: 1.05 1.05;
+  filter: brightness(90%);
+  transition: ease-in-out 200ms;
+}
+.card_blu {
+  /* background: var(--color-secondary); */
+  background-color: #d9edff;
+  box-shadow: 0 0.5rem 1rem -0.25rem #d9edff;
+}
+.logo {
+  top: 1.5rem;
+  left: 45%;
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+}
+.img_container {
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+}
+.project_descr {
+  /* text-align: justify; */
+  text-align: start;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 430px) {
+  .card {
+    min-width: 15rem;
+    height: 50rem;
+  }
+}

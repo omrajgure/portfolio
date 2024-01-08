@@ -1,0 +1,142 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 4rem;
+  min-height: 38rem;
+  height: auto;
+  z-index: 100;
+}
+.hero {
+  position: relative;
+  height: 100svh;
+
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.upperLines {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 220px;
+
+  height: 25vh;
+}
+.lowerLines {
+  position: absolute;
+  bottom: 0;
+  left: -3rem;
+  height: 25vh;
+  min-width: 220px;
+}
+.dots_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 2rem;
+  height: 7rem;
+}
+.dots_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 7rem;
+  min-height: 2rem;
+}
+.arrow {
+  position: absolute;
+  top: 4%;
+  height: 12rem;
+  width: 10rem;
+  left: 40%;
+}
+.img_div {
+  margin-top: 5.2rem;
+  height: 30rem;
+  width: 30rem;
+}
+.intro {
+  width: auto;
+  max-width: 30rem;
+  text-align: justify;
+}
+.intro_summary {
+  margin-bottom: 2rem;
+}
+
+.highlighted_text {
+  /* color: var(--color-primary); */
+  color: #b8972b;
+  font-weight: bold;
+}
+.buttondiv {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .hero {
+    height: 65rem;
+  }
+  .intro {
+    margin-top: 5rem;
+  }
+  .arrow {
+    top: 0;
+    left: 55%;
+    opacity: 0.5;
+  }
+  .img_div {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 495px) {
+  .img_div {
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+}
+@media screen and (max-width: 440px) {
+  .img_div {
+    margin: 0;
+    width: auto;
+    height: auto;
+  }
+  .intro {
+    text-align: center;
+  }
+  .arrow {
+    top: 5%;
+    left: 75%;
+    width: 5rem;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .buttondiv {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .intro_summary {
+    display: none;
+  }
+  .img_div {
+    width: 15rem;
+    height: 25rem;
+  }
+  .arrow {
+    top: 2%;
+    left: 60%;
+    width: 4rem;
+    height: 6rem;
+  }
+}

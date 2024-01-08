@@ -1,0 +1,39 @@
+.wrapper {
+  margin-top: 5rem;
+  min-block-size: 100vh;
+
+  position: relative;
+}
+.proj_star {
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  height: 4rem;
+  width: 3rem;
+}
+.proj_arrow {
+  opacity: 0.5;
+  position: absolute;
+  bottom: -2rem;
+  left: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.projectWrapper {
+  /* display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 50px; */
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .proj_star {
+    right: 0.2rem;
+  }
+}

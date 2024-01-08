@@ -1,0 +1,20 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  height: 2rem;
+  width: 7rem;
+  font-size: medium;
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+}
+
+/* @media screen and (max-width: 668px) {
+  .button {
+    display: none;
+  }
+} */
