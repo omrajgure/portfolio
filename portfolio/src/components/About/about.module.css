@@ -9,8 +9,8 @@
   padding: 2rem;
 }
 .img_div {
-  height: 45rem;
-  width: 75rem;
+  height: 30rem;
+  width: 55rem;
 }
 
 .passion_div {
@@ -38,8 +38,8 @@
 }
 @media screen and (max-width: 1050px) {
   .img_div {
-    width: 85rem;
-    height: 30rem;
+    width: 95rem;
+    height: 25rem;
   }
 }
 @media screen and (max-width: 840px) {
@@ -50,7 +50,7 @@
     margin-top: 2rem;
   }
   .img_div {
-    height: 40rem;
+    height: 30rem;
     width: 30rem;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./about.module.css";
-import about_img from "../../assets/about_me_img.png";
+// import about_img from "../../assets/about_me_img.png";
+import about_img from "../../assets/about_me_updated.jpg";
 export const About = () => {
   return (
     <div className={styles.wrapper} id="about">
@@ -20,19 +21,19 @@ export const About = () => {
             <br />
             Educational Background:
             <br />
+            <br />
             &bull; Bachelor of Technology (B.Tech) <br />
-            <sub>
-              &nbsp;&nbsp;&nbsp;&nbsp; St. Vincent Pallotti College of
-              Engineering and Technology, Nagpur
+            <sub style={{ textAlign: "center" }}>
+              St. Vincent Pallotti College of Engineering and Technology, Nagpur
             </sub>
+            <br />
             <br />
             &bull; Secondary Education <br />
-            <sub>
-              &nbsp;&nbsp;&nbsp;&nbsp; Amolakchand Mahavidyalaya, Yavatmal
-            </sub>
+            <sub> Amolakchand Mahavidyalaya, Yavatmal</sub>
+            <br />
             <br />
             &bull; Schooling <br />
-            <sub>&nbsp;&nbsp;&nbsp;&nbsp; School of Scholars, Yavatmal</sub>
+            <sub> School of Scholars, Yavatmal</sub>
             <br />
           </p>
           <div className={styles.passion_div}>
