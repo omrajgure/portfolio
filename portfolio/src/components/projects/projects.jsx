@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./projects.module.css";
 import { EachProject } from "./eachProject";
 import Kart from "../../assets/qkart.png";
@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import proj_star from "../../assets/project_star.png";
 import proj_arrow from "../../assets/proj_arrow.png";
+import { animate, motion, useInView } from "framer-motion";
 
 import { Navbar } from "../navbar/navbar";
 // Import Swiper styles
@@ -17,6 +18,8 @@ import "swiper/css/navigation";
 import { RightBut } from "./right_but";
 import { LeftBut } from "./left_but";
 export const Projects = () => {
+  const ref = useRef(null);
+  const isinview = useInView(ref, { once: true });
   let qkart_descr = (
     <p>
       QKart is an e-commerce application offering a variety of products for
@@ -89,14 +92,23 @@ export const Projects = () => {
     </p>
   );
   return (
-    <div className={styles.wrapper} id="projects">
+    <motion.div
+      ref={ref}
+      animate={{
+        y: isinview && ["12rem", "0"],
+        opacity: isinview ? 1 : 0,
+      }}
+      transition={{ duration: 1 }}
+      className={styles.wrapper}
+      id="projects"
+    >
       <img className={styles.proj_star} src={proj_star} alt="proj_star" />
       <img className={styles.proj_arrow} src={proj_arrow} alt="proj_arrow" />
       <div className={styles.header}>
         <h4 style={{ color: "#706ee5", fontWeight: "bold" }}>Projects</h4>
         <h2>My Working Projects</h2>
       </div>
-      <div className={styles.projectWrapper}>
+      <motion.div className={styles.projectWrapper}>
         <Swiper
           style={{ padding: "0px 20px" }}
           initialSlide={0}
@@ -173,7 +185,7 @@ export const Projects = () => {
             </a>
           </SwiperSlide>
         </Swiper>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };

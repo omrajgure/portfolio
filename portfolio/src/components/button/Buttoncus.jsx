@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../button/Buttoncus.module.css";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 export const Buttoncus = ({ text, shouldvisible, navbar }) => {
   const handledownload = () => {
     if (navbar) {
@@ -20,7 +21,9 @@ export const Buttoncus = ({ text, shouldvisible, navbar }) => {
     };
   }, []);
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 1.1, backgroundColor: "#dbb22a" }}
+      whileTap={{ scale: 0.9 }}
       onClick={handledownload}
       style={{
         display: shouldvisible ? "block" : cusdiplay,
@@ -28,6 +31,6 @@ export const Buttoncus = ({ text, shouldvisible, navbar }) => {
       className={styles.button}
     >
       {text}
-    </div>
+    </motion.div>
   );
 };
